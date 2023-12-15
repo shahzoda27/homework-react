@@ -1,0 +1,101 @@
+.article{
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+    .p{
+        opacity: 0.6;
+        max-width: 70%;
+        text-align: center;
+    }
+    .article_box{
+        width: 100%;
+        display: flex;
+        gap: 30px;
+        .article_item1{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+   
+            p{
+                opacity: 0.6;
+            }
+        }
+        .article_item2{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            .article_item2-box1{
+                width: 100%;
+                display: flex;
+                gap: 20px;
+                .img10{
+                    width: 200px;
+                    height: 150px;
+                }
+                h3{
+                    font-size: 16px;
+                    margin: 12px 0px;
+                }
+                p{
+                    opacity: 0.6;
+                    margin: 12px 0px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:850px) {
+    .article{
+        padding: 20px;
+        .article_box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            flex-direction: column;
+            .article_item1{
+                width: 100%;
+            }
+            .article_item2{
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width:420px) {
+    .article{
+        padding: 10px;
+        .p{
+            width: 100%;
+            font-size: 16px;
+        }
+        .article_box{
+            .article_item2{
+                h3{
+                    font-size: 5px;
+                    margin: 8px 0px;
+                }
+                p{
+                    opacity: 0.6;
+                    margin: 8px 0px;
+                    font-size: 8px;
+                }
+                h4{
+                    font-size: 7px;
+                }
+                .article_item2-box1{
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+            }
+        }
+    }
+}
